@@ -1,0 +1,21 @@
+package elements;
+
+public class Tank extends Object
+{
+	private String pic;
+	/**
+	 * creates a new Tank at position (x,y)
+	 * @param x
+	 * @param y
+	 */
+	protected Tank(int x, int y, String picture)
+	{
+		super(x, y);
+		pic = picture;
+	}
+	
+	public void moveTo()
+	{
+		
+	}
+}

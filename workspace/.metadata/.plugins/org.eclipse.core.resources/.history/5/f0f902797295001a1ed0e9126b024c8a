@@ -1,0 +1,14 @@
+package elements;
+
+public class Tank extends Object
+{
+	/**
+	 * creates a new Tank at position (x,y)
+	 * @param x
+	 * @param y
+	 */
+	protected Tank(int x, int y)
+	{
+		super(x, y);
+	}
+}
