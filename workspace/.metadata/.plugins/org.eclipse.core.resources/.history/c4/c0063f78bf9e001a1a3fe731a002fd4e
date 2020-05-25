@@ -6,8 +6,7 @@ public class NormalEnemyTank extends Tank
 {
 	public NormalEnemyTank()
 	{
-		tankIcon = new ImageIcon("TankPics/userTank/UserTank.png");
-		resize(tankIcon);
+		super.tankIcon = new ImageIcon("TankPics/userTank/UserTank.png");
 	}
 	
 	public void shoot()

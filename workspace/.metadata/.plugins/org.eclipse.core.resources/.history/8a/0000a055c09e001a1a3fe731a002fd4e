@@ -2,9 +2,11 @@ package elements;
 
 import javax.swing.ImageIcon;
 
-public class UserTank extends Tank
+public class NormalEnemyTank extends Tank
 {
-	public UserTank()
+	
+	
+	public NormalEnemyTank()
 	{
 		tankIcon = new ImageIcon("TankPics/userTank/UserTank.png");
 		resize(tankIcon);

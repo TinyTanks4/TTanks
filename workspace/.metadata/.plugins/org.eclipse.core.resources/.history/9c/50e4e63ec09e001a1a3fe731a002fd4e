@@ -4,6 +4,8 @@ import javax.swing.ImageIcon;
 
 public class UserTank extends Tank
 {
+	ImageIcon tankIcon;
+	
 	public UserTank()
 	{
 		tankIcon = new ImageIcon("TankPics/userTank/UserTank.png");

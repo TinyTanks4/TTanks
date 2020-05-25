@@ -6,8 +6,8 @@ public class UserTank extends Tank
 {
 	public UserTank()
 	{
-		tankIcon = new ImageIcon("TankPics/userTank/UserTank.png");
-		resize(tankIcon);
+		super.tankIcon = new ImageIcon("TankPics/userTank/UserTank.png");
+		resize();
 	}
 	
 	public void shoot()

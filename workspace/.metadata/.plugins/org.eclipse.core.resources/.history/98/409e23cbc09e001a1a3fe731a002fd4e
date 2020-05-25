@@ -10,9 +10,6 @@ public abstract class Tank
 	 */
 	ImageIcon tankIcon;
 	
-	/**
-	 * Creates a tank
-	 */
 	public Tank()
 	{
 		

@@ -10,9 +10,6 @@ public abstract class Tank
 	 */
 	ImageIcon tankIcon;
 	
-	/**
-	 * Creates a tank
-	 */
 	public Tank()
 	{
 		
@@ -30,7 +27,6 @@ public abstract class Tank
 	
 	/**
 	 * Resize the Image to 150 x 150
-	 * @param the tank image used
 	 */
 	public void resize(ImageIcon a)
 	{
