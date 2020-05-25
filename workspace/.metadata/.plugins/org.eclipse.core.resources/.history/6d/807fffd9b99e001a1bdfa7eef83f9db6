@@ -1,0 +1,21 @@
+package elements;
+
+import javax.swing.ImageIcon;
+
+public class EnemyTank extends Tank
+{
+	public EnemyTank()
+	{
+		super.tankIcon = new ImageIcon("TankPics/userTank/EnemyTank.png");
+	}
+	
+	public void shoot()
+	{
+		
+	}
+	
+	public void move()
+	{
+		
+	}
+}

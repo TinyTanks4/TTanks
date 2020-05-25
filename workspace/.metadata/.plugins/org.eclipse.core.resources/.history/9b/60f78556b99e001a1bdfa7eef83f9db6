@@ -1,0 +1,19 @@
+package elements;
+
+public class UserTank extends Tank
+{
+	public UserTank()
+	{
+		
+	}
+	
+	public void move()
+	{
+		
+	}
+	
+	public void shoot()
+	{
+		
+	}
+}
