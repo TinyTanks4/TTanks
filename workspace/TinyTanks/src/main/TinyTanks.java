@@ -1,5 +1,6 @@
 package main;
 
-public class TinyTanks {
-
+public class TinyTanks 
+{
+	
 }

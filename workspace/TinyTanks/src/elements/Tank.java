@@ -24,11 +24,6 @@ public abstract class Tank
 	public abstract void shoot();
 	
 	/**
-	 * The movement of the tank
-	 */
-	public abstract void move();
-	
-	/**
 	 * Resize the Image to 150 x 150
 	 * @param the tank image used
 	 */
