@@ -4,13 +4,22 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 public class UserTank extends Tank implements KeyListener
 {
-	public UserTank()
+	JLabel l;
+	
+	public UserTank(JFrame f, JPanel p, JLabel l)
 	{
 		tankIcon = new ImageIcon("TankPics/userTank/UserTank.png");
 		resize(tankIcon);
+		p = (JPanel)f.getContentPane();
+		l = new JLabel();
+        l.setIcon(tankIcon);
+        p.add(l);
 	}
 	
 	public void shoot()

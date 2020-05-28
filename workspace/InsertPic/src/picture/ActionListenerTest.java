@@ -9,7 +9,7 @@ import java.awt.event.KeyListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
- 
+
 public class ActionListenerTest implements ActionListener, KeyListener
 {
     JButton button;
