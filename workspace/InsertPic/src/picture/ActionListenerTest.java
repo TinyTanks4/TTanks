@@ -64,7 +64,7 @@ public class ActionListenerTest implements ActionListener, KeyListener
 
 	@Override
 	public void keyReleased(KeyEvent e) {
-		button.setText("Click Me!");
+		button.setText("Click Me");
 		button2.setText("Click Me");
 	}
 	
