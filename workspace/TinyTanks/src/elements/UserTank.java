@@ -3,7 +3,6 @@ package elements;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -14,12 +13,12 @@ public class UserTank extends Tank implements KeyListener
 	
 	public UserTank(JFrame f, JPanel p, JLabel l)
 	{
-		tankIcon = new ImageIcon("TankPics/userTank/UserTank.png");
-		resize(tankIcon);
+		this.l = l;
+		resizeAll("TankPics/userTank/UserTank.png", tankIcon0, tankIcon90, tankIcon180, tankIcon270);
 		p = (JPanel)f.getContentPane();
-		l = new JLabel();
-        l.setIcon(tankIcon);
+        l.setIcon(tankIcon0);
         p.add(l);
+        f.setVisible(true);
 	}
 	
 	public void shoot()
@@ -47,20 +46,28 @@ public class UserTank extends Tank implements KeyListener
 	{
 		int key = e.getKeyCode();
 
-        if (key == KeyEvent.VK_LEFT) {
-            
+        if (key == KeyEvent.VK_LEFT) 
+        {
+            l.removeAll();
+            l.setIcon(tankIcon90);
         }
 
-        if (key == KeyEvent.VK_RIGHT) {
-            
+        if (key == KeyEvent.VK_RIGHT) 
+        {
+        	l.removeAll();
+        	l.setIcon(tankIcon270);
         }
 
-        if (key == KeyEvent.VK_UP) {
-        	
+        if (key == KeyEvent.VK_UP) 
+        {
+        	l.removeAll();
+        	l.setIcon(tankIcon0);
         }
 
-        if (key == KeyEvent.VK_DOWN) {
-        	
+        if (key == KeyEvent.VK_DOWN) 
+        {
+        	l.removeAll();
+        	l.setIcon(tankIcon180);
         }
 	}
 }

@@ -43,10 +43,12 @@ public class TinyTanks
 		mainJFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         mainJFrame.getContentPane().setLayout(null);
 		mainJFrame.setBackground(Color.WHITE);
+		mainJFrame.setLocationRelativeTo(null);
 		mainJFrame.setVisible(true);
 		
 		
 		//Create the user tank
 		Tank userTank = new UserTank(mainJFrame, jpanel, jlabel);
+		
 	}
 }
