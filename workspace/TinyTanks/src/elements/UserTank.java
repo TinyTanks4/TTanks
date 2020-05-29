@@ -16,8 +16,8 @@ public class UserTank extends Tank implements KeyListener
 		this.l = l;
 		resizeAll("TankPics/userTank/UserTank.png", tankIcon0, tankIcon90, tankIcon180, tankIcon270);
 		p = (JPanel)f.getContentPane();
-        l.setIcon(tankIcon0);
-        p.add(l);
+        this.l.setIcon(tankIcon0);
+        p.add(this.l);
         f.setVisible(true);
 	}
 	
@@ -45,17 +45,19 @@ public class UserTank extends Tank implements KeyListener
 	private void TankMove(KeyEvent e)
 	{
 		int key = e.getKeyCode();
-
+		
+		//I don't know if this will work because it isn't the direct
+		//label from the main class
         if (key == KeyEvent.VK_LEFT) 
         {
             l.removeAll();
-            l.setIcon(tankIcon90);
+            l.setIcon(tankIcon270);
         }
 
         if (key == KeyEvent.VK_RIGHT) 
         {
         	l.removeAll();
-        	l.setIcon(tankIcon270);
+        	l.setIcon(tankIcon90);
         }
 
         if (key == KeyEvent.VK_UP) 
